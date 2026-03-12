@@ -23,8 +23,8 @@ A simple, production-ready Python AI project template. Clone, adapt, and build y
 
 | Feature         | Details                        |
 |-----------------|-------------------------------|
-| **Sample App**  | `sample.py` — main entrypoint |
-| **Tests**       | `test.py` — quick test runner |
+| **Sample App**  | `hrPolicyBot.py` — main entrypoint |
+| **Tests**       | `testApiConnection.py` — quick test runner |
 | **Requirements**| `requirements.txt`            |
 | **Easy Setup**  | PowerShell, Windows-friendly  |
 
@@ -38,8 +38,8 @@ User (PowerShell)
    ▼
 Python venv (.venv)
    │
-   ├── sample.py   # Main script
-   └── test.py     # Test runner
+   ├── hrPolicyBot.py        # Main script
+   └── testApiConnection.py  # Test runner
 ```
 
 ---
@@ -57,18 +57,14 @@ Python venv (.venv)
 
 Run these commands from the project root:
 
-# 1. Create a virtual environment
 ```bash
+# 1. Create a virtual environment
 python -m venv .venv
-```
 
 # 2. Activate the virtual environment
-```bash
-.venv\Scripts\Activate.ps1
-```
+source .venv/bin/activate
 
 # 3. Upgrade pip and install dependencies
-```bash
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
@@ -76,20 +72,22 @@ pip install -r requirements.txt
 ---
 
 ## Running the App
-### Run the main sample
+
+### Run the main bot
 ```bash
-python sample.py
+python hrPolicyBot.py
 ```
+
 ### Run the test script
 ```bash
-python test.py
+python testApiConnection.py
 ```
 
 ---
 
 ## Adapting for Your Use Case
 
-- Replace `sample.py` with your own logic.
+- Replace `hrPolicyBot.py` with your own logic or add new scripts.
 - Add new dependencies to `requirements.txt`.
 - Add more scripts or modules as needed.
 
@@ -100,11 +98,11 @@ python test.py
 ```
 AIFridays/
 │
-├── sample.py           # Main script
-├── test.py             # Test runner
-├── requirements.txt    # Python dependencies
-├── README.md           # This file
-└── __pycache__/        # Python bytecode (auto-generated)
+├── hrPolicyBot.py         # Main script
+├── testApiConnection.py   # Test runner
+├── requirements.txt       # Python dependencies
+├── README.md              # This file
+└── __pycache__/           # Python bytecode (auto-generated)
 ```
 
 ---
@@ -119,3 +117,7 @@ AIFridays/
   Run `python --version` and ensure it’s 3.11 or higher.
 
 ---
+
+## License
+
+MIT — free to use, fork, and modify for any purpose.
