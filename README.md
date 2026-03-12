@@ -64,6 +64,7 @@ python -m venv .venv
 # 2. Activate the virtual environment
 .venv/Scripts/activate
 
+
 # 3. Upgrade pip and install dependencies
 python -m pip install --upgrade pip
 pip install -r requirements.txt
