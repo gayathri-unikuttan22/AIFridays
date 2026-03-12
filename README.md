@@ -62,7 +62,8 @@ Run these commands from the project root:
 python -m venv .venv
 
 # 2. Activate the virtual environment
-source .venv/bin/activate
+.venv/Scripts/activate
+
 
 # 3. Upgrade pip and install dependencies
 python -m pip install --upgrade pip
